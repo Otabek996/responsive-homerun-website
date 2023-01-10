@@ -4,24 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!--------------------- CSS --------------------->
-    <link rel="stylesheet" href="/styles.scss">
-
-    <!--------------------- Bootstrap --------------------->
+    <!--==================== BOOTSTRAP ====================-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="/css/styles.css">
 
     <title>Homerun Website</title>
 </head>
 <body>
-    <!--------------------- Header --------------------->
-    
+    <!--==================== HEADER ====================-->
+    <section class="header">
+        <div class="container header__container">
+            <nav class="navbar navbar-expand-lg my-2 header__navbar">
+                <a class="navbar-brand" href="#">
+                    <img src="/public/img/logo.png" alt="Homerun">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link menu-link" href="#">Product</a>
+                        </li>
 
-    <!--------------------- Bootstrap --------------------->
+                        <li class="nav-item mx-2">
+                            <a class="nav-link menu-link" href="#">Templates</a>
+                        </li>
+
+                        <li class="nav-item mx-2">
+                            <a class="nav-link menu-link" href="#">Pricing</a>
+                        </li>
+
+                        <li class="nav-item mx-2">
+                            <a class="nav-link menu-link" href="#">Customers</a>
+                        </li>
+
+                        <li class="nav-item mx-2">
+                            <a class="nav-link menu-link" href="#">Learn</a>
+                        </li>
+                    </ul>
+
+                    <button class="btn btn-outline-secondary my-2 mx-3 mx-sm-2 my-sm-0 button-gray" type="submit">Log in</button>
+                    <button class="btn btn-primary my-2 my-sm-0 button-blue" type="submit">Start free trial</button>
+                </div>
+            </nav>
+
+            <div class="row header__body">
+                <div class="col-12 text-center">
+                    <h1 class="title my-5 my-sm-3 my-xs-0">Where hiring <br> comes together.</h1>
+                    <p class="subtitle py-4 py-sm-2 py-xs-0">Everything you need to organise your hiring <br> and make a great impression.</p>
+
+                    <form>
+                        <div class="form-group mx-auto header__body-input">
+                            <div class="input-group">
+                                <input type="text" class="form-control header-input" placeholder="Work email" aria-describedby="basic-addon1">
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-outline-primary button-blue" type="button">Start free trial</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                    <p class="header-subtitle mt-5 mb-2">Join thousands of teams hiring with Homerun</p>
+
+                    <div class="header-teams">
+                        <img src="./public/img/teamOne.png" alt="TBWA\NEBOKO">
+                        <img src="./public/img/teamTwo.png" alt="TONY'S CHOCOLONELY">
+                        <img src="./public/img/teamThree.png" alt="Buffer">
+                        <img src="./public/img/teamFour.png" alt="Volks HOTEL">
+                        <img src="./public/img/teamFive.png" alt="geckoboard">
+                        <img src="./public/img/teamSix.png" alt="PUBLICIS GROUPE">
+                        <img src="./public/img/teamSeven.png" alt="TNW">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== BODY ====================-->
+    <section class="body">
+        
+    </section>
+
+    <!--==================== BOOTSTRAP ====================-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
-    <!--------------------- JavaScript --------------------->
+    <!--==================== JAVASCRIPT ====================-->
     <script src="/main.js" />
 
 </body>

@@ -1,0 +1,200 @@
+/*=============== PAGES ===============*/
+/*=============== FONTS ===============*/
+@font-face {
+  font-family: 'Roboto-Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.woff") format("woff"); }
+@font-face {
+  font-family: 'Roboto-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff"); }
+/*=============== PAGES ===============*/
+/*=============== FONTS ===============*/
+@font-face {
+  font-family: 'Roboto-Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.woff") format("woff"); }
+@font-face {
+  font-family: 'Roboto-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff"); }
+/*=============== VARIABLES ===============*/
+:root {
+  /*======== Fonts ========*/
+  --font-regular: 'Roboto-Regular';
+  --font-bold: 'Roboto-Bold';
+  /*======== Colors ========*/
+  --text-color-nav: #141414;
+  --text-color-footer: #778291;
+  --text-color-h1: rgba(14, 16, 22, 0.95);
+  --text-color-h2: #000000;
+  --text-color-h3: rgba(14, 16, 22, 0.95);
+  --text-color-p: rgba(14, 16, 22, 0.95);
+  --text-color-subtitle: #35393F;
+  --text-color-description: rgba(14, 16, 22, 0.4);
+  --text-color-gray: #B2B2B2;
+  --text-color-green: #0C9F64;
+  --text-color-yellow: #FEC104;
+  --text-color-white: #FFFFFF;
+  --text-color-button-one: #333333;
+  --text-color-button-two: #FFFFFF;
+  --text-color-button-three: #F4F6F8;
+  --text-color-hover: #0099FF;
+  --input-color-border: #0099FF;
+  --button-color-one: #0099FF;
+  --button-color-two: rgb(221, 221, 221); }
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+html {
+  scroll-behavior: smooth; }
+
+body .button-gray {
+  font-family: var(--font-regular);
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--text-color-button-one);
+  border-color: transparent;
+  background-color: transparent;
+  transition: 0.2s ease-out;
+  height: 50px; }
+  body .button-gray:hover {
+    color: var(--text-color-button-one);
+    border-color: var(--button-color-two);
+    background-color: var(--button-color-two); }
+body .button-blue {
+  font-family: var(--font-regular);
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--text-color-button-two);
+  border-color: transparent;
+  background-color: var(--button-color-one);
+  transition: 0.2s ease-out;
+  height: 50px; }
+  body .button-blue:hover {
+    color: var(--text-color-hover);
+    background-color: transparent;
+    border-color: var(--button-color-one); }
+
+/*=============== HEADER ===============*/
+.header .menu-link {
+  font-family: var(--font-regular);
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--text-color-nav);
+  transition: 0.2s ease-out; }
+  .header .menu-link:hover {
+    color: var(--text-color-hover); }
+.header__body .title {
+  font-family: var(--font-regular);
+  font-size: 120px;
+  line-height: 110px;
+  letter-spacing: 2px;
+  color: var(--text-color-h1);
+  text-align: center; }
+.header__body .subtitle {
+  font-family: var(--font-regular);
+  font-size: 26px;
+  line-height: 36px;
+  color: var(--text-color-subtitle);
+  text-align: center;
+  margin: 70px 0 30px 0; }
+.header__body-input {
+  width: 455px; }
+  .header__body-input .input-group .header-input {
+    border-radius: 0px;
+    border: 2px solid var(--input-color-border); }
+    .header__body-input .input-group .header-input::placeholder {
+      font-family: var(--font-regular);
+      font-size: 20px;
+      line-height: 28px;
+      color: var(--text-color-gray); }
+  .header__body-input .input-group .input-group-prepend button {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px; }
+.header__body .header-subtitle {
+  font-family: var(--font-regular);
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--text-color-gray); }
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 1200px) {
+  body .button-gray {
+    height: 40px; }
+  body .button-blue {
+    height: 40px; }
+
+  .header__body .title {
+    font-size: 90px;
+    line-height: 80px; }
+  .header__body .subtitle {
+    font-size: 21px;
+    line-height: 31px; }
+  .header__body .header-subtitle {
+    font-size: 17px;
+    line-height: 25px; } }
+/* For medium devices */
+@media screen and (max-width: 767px) {
+  .header__body .title {
+    font-size: 55px;
+    line-height: 45px; }
+  .header__body .subtitle {
+    font-size: 17px;
+    line-height: 27px; }
+  .header__body-input {
+    width: 340px; }
+  .header__body .header-subtitle {
+    font-size: 15px;
+    line-height: 23px; } }
+@media screen and (max-width: 540px) {
+  .header__body .title {
+    font-size: 47px;
+    line-height: 37px;
+    margin: 38px 0; }
+  .header__body .subtitle {
+    font-size: 15px;
+    line-height: 23px;
+    margin: 14px 0; }
+  .header__body-input {
+    width: 280px; }
+    .header__body-input .input-group .header-input::placeholder {
+      font-size: 15px;
+      line-height: 20px; }
+    .header__body-input .input-group .input-group-prepend button {
+      font-size: 15px;
+      line-height: 20px; }
+  .header__body .header-subtitle {
+    font-size: 13px;
+    line-height: 21px;
+    margin: 25px 0 5px 0 !important; } }
+/* For small devices */
+@media screen and (max-width: 400px) {
+  .header__body .title {
+    font-size: 35px;
+    line-height: 25px; }
+  .header__body .subtitle {
+    font-size: 12px;
+    line-height: 19px; }
+  .header__body-input {
+    width: 200px; }
+    .header__body-input .input-group .header-input::placeholder {
+      font-size: 10px;
+      line-height: 15px; }
+    .header__body-input .input-group .input-group-prepend button {
+      font-size: 10px;
+      line-height: 15px; }
+  .header__body .header-subtitle {
+    font-size: 10px;
+    line-height: 17px; } }
+
+/*# sourceMappingURL=styles.css.map */
