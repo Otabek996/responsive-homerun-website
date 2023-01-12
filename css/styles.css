@@ -40,13 +40,15 @@
   --text-color-green: #0C9F64;
   --text-color-yellow: #FEC104;
   --text-color-white: #FFFFFF;
+  --text-color-black: #000000;
   --text-color-button-one: #333333;
   --text-color-button-two: #FFFFFF;
   --text-color-button-three: #F4F6F8;
   --text-color-hover: #0099FF;
   --input-color-border: #0099FF;
   --button-color-one: #0099FF;
-  --button-color-two: rgb(221, 221, 221); }
+  --button-color-two: rgb(221, 221, 221);
+  --button-color-three: #FFFFFF; }
 
 /*=============== BASE ===============*/
 * {
@@ -126,6 +128,66 @@ body .button-blue {
   line-height: 28px;
   color: var(--text-color-gray); }
 
+/*=============== BODY ===============*/
+.body .body-top {
+  margin-bottom: 100px; }
+  .body .body-top .body-title {
+    font-family: var(--font-regular);
+    font-size: 36px;
+    line-height: 56px;
+    letter-spacing: 1.5px;
+    color: var(--text-color-h2);
+    margin-top: 90px; }
+  .body .body-top .play-button {
+    display: flex;
+    align-items: center;
+    background: var(--button-color-three);
+    border: 2px solid transparent;
+    border-radius: 40px;
+    box-shadow: 0px 7px 10px rgba(186, 193, 197, 0.2);
+    transition: 0.2s ease-out;
+    padding: 21.5px 30px 21.5px 21.5px; }
+    .body .body-top .play-button:hover {
+      background: var(--button-color-two); }
+    .body .body-top .play-button .play-button__text {
+      font-family: var(--font-regular);
+      font-size: 18px;
+      line-height: 20px;
+      color: var(--text-color-black);
+      margin-left: 16.5px; }
+.body .body-medium-one {
+  margin: 100px 0; }
+  .body .body-medium-one .p-title {
+    font-family: var(--font-bold);
+    font-size: 30px;
+    line-height: 36px;
+    color: var(--text-color-green); }
+  .body .body-medium-one .h3-title {
+    font-family: var(--font-bold);
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: 1.5px;
+    color: var(--text-color-h3);
+    margin: 15px 70px 25px 0; }
+  .body .body-medium-one .description {
+    font-family: var(--font-regular);
+    font-size: 22px;
+    line-height: 31px;
+    color: var(--text-color-p);
+    margin: 0 84px 25px 0; }
+  .body .body-medium-one .body-button {
+    font-family: var(--font-bold); }
+.body .body-medium-two {
+  margin: 100px 0; }
+  .body .body-medium-two .img-body {
+    width: 100%; }
+  .body .body-medium-two .img-description {
+    font-family: var(--font-regular);
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--text-color-description);
+    margin-top: 10px; }
+
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 1200px) {
@@ -134,6 +196,7 @@ body .button-blue {
   body .button-blue {
     height: 40px; }
 
+  /* Header */
   .header__body .title {
     font-size: 90px;
     line-height: 80px; }
@@ -142,9 +205,53 @@ body .button-blue {
     line-height: 31px; }
   .header__body .header-subtitle {
     font-size: 17px;
-    line-height: 25px; } }
+    line-height: 25px; }
+
+  /* Body */
+  .body .body-top {
+    margin-bottom: 50px; }
+  .body .body-medium-one {
+    margin: 100px 0 50px 0; }
+    .body .body-medium-one .p-title {
+      font-size: 25px;
+      line-height: 31px; }
+    .body .body-medium-one .h3-title {
+      font-size: 47px;
+      line-height: 55px;
+      letter-spacing: 1px;
+      margin: 15px 0 25px 0; }
+    .body .body-medium-one .description {
+      font-size: 20px;
+      line-height: 29px; }
+    .body .body-medium-one .body-button {
+      font-size: 15px;
+      line-height: 17px; }
+  .body .body-medium-two {
+    margin: 100px 0 50px 0; }
+    .body .body-medium-two .img-body {
+      width: 100%; }
+    .body .body-medium-two .img-description {
+      font-size: 14px;
+      line-height: 19px; } }
+@media screen and (max-width: 991px) {
+  /* Body */
+  .body .body-top {
+    margin-bottom: 20px; }
+    .body .body-top .video-cover {
+      width: 100%; }
+  .body .body-medium-one {
+    margin: 100px 0 0 0; }
+    .body .body-medium-one .description {
+      margin: 0 0 25px 0; }
+    .body .body-medium-one .body-button {
+      margin-bottom: 10px; }
+  .body .body-medium-two {
+    margin: 0 0 20px 0; }
+  .body .margin-top-none {
+    margin: 10px 0 140px 0; } }
 /* For medium devices */
 @media screen and (max-width: 767px) {
+  /* Header */
   .header__body .title {
     font-size: 55px;
     line-height: 45px; }
@@ -155,8 +262,47 @@ body .button-blue {
     width: 340px; }
   .header__body .header-subtitle {
     font-size: 15px;
-    line-height: 23px; } }
+    line-height: 23px; }
+
+  /* Body */
+  .body .body-top .body-title {
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing: 1px;
+    margin-top: 70px; }
+  .body .body-top .play-button {
+    padding: 20px; }
+    .body .body-top .play-button .play-button__text {
+      display: none; }
+  .body .body-medium-one {
+    margin: 60px 0 0 0; }
+    .body .body-medium-one .p-title {
+      font-size: 20px;
+      line-height: 26px; }
+    .body .body-medium-one .h3-title {
+      font-size: 37px;
+      line-height: 45px; }
+    .body .body-medium-one .description {
+      font-size: 17px;
+      line-height: 26px; }
+  .body .margin-top-none {
+    margin: 10px 0 110px 0; } }
+@media screen and (max-width: 575px) {
+  /* Body */
+  .body .body-top {
+    margin-bottom: 10px; }
+    .body .body-top .video-cover {
+      width: 85%; }
+  .body .body-medium-one {
+    margin: 50px 0 0 0; }
+  .body .body-medium-two {
+    margin: 0 0 10px 0; }
+    .body .body-medium-two .img-body {
+      width: 85%; }
+  .body .margin-top-none {
+    margin: 10px 0 90px 0; } }
 @media screen and (max-width: 540px) {
+  /* Header */
   .header__body .title {
     font-size: 47px;
     line-height: 37px;
@@ -176,9 +322,33 @@ body .button-blue {
   .header__body .header-subtitle {
     font-size: 13px;
     line-height: 21px;
-    margin: 25px 0 5px 0 !important; } }
+    margin: 25px 0 5px 0 !important; }
+
+  /* Body */
+  .body .body-top .body-title {
+    font-size: 25px;
+    line-height: 45px;
+    margin-top: 50px; }
+  .body .body-top .play-button {
+    padding: 15px; }
+  .body .body-medium-one .p-title {
+    font-size: 15px;
+    line-height: 21px; }
+  .body .body-medium-one .h3-title {
+    font-size: 28px;
+    line-height: 36px; }
+  .body .body-medium-one .description {
+    font-size: 15px;
+    line-height: 24px; }
+  .body .body-medium-one .body-button {
+    font-size: 14px;
+    line-height: 16px; }
+  .body .body-medium-two .img-description {
+    font-size: 12px;
+    line-height: 17px; } }
 /* For small devices */
 @media screen and (max-width: 400px) {
+  /* Header */
   .header__body .title {
     font-size: 35px;
     line-height: 25px; }
@@ -195,6 +365,35 @@ body .button-blue {
       line-height: 15px; }
   .header__body .header-subtitle {
     font-size: 10px;
-    line-height: 17px; } }
+    line-height: 17px; }
+
+  /* Body */
+  .body .body-top {
+    margin-bottom: 5px; }
+    .body .body-top .body-title {
+      font-size: 20px;
+      line-height: 40px;
+      margin-top: 45px; }
+    .body .body-top .play-button {
+      padding: 10px; }
+  .body .body-medium-one {
+    margin: 30px 0 0 0; }
+    .body .body-medium-one .h3-title {
+      margin-top: 18px;
+      margin-bottom: 10px; }
+    .body .body-medium-one .description {
+      font-size: 13px;
+      line-height: 22px;
+      margin-bottom: 5px; }
+    .body .body-medium-one .body-button {
+      font-size: 13px;
+      line-height: 15px; }
+  .body .body-medium-two {
+    margin: 0 0 5px 0; }
+    .body .body-medium-two .img-description {
+      font-size: 10px;
+      line-height: 15px; }
+  .body .margin-top-none {
+    margin: 10px 0 70px 0; } }
 
 /*# sourceMappingURL=styles.css.map */

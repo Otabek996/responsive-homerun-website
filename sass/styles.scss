@@ -119,6 +119,94 @@ body {
 }
 
 
+/*=============== BODY ===============*/
+.body {
+    .body-top {
+        margin-bottom: 100px;
+
+        .body-title {
+            font-family: var(--font-regular);
+            font-size: 36px;
+            line-height: 56px;
+            letter-spacing: 1.5px;
+            color: var(--text-color-h2);
+            margin-top: 90px;
+        }
+    
+        .play-button {
+            display: flex;
+            align-items: center;
+            background: var(--button-color-three);
+            border: 2px solid transparent;
+            border-radius: 40px;
+            box-shadow: 0px 7px 10px rgba(186, 193, 197, 0.2);
+            transition: 0.2s ease-out;
+            padding: 21.5px 30px 21.5px 21.5px;
+    
+            &:hover {
+                background: var(--button-color-two);
+            }
+    
+            .play-button__text {
+                font-family: var(--font-regular);
+                font-size: 18px;
+                line-height: 20px;
+                color: var(--text-color-black);
+                margin-left: 16.5px;
+            }
+        }
+    }
+
+    .body-medium-one {
+        margin: 100px 0;
+
+        .p-title {
+            font-family: var(--font-bold);
+            font-size: 30px;
+            line-height: 36px;
+            color: var(--text-color-green);
+        }
+    
+        .h3-title {
+            font-family: var(--font-bold);
+            font-size: 56px;
+            line-height: 64px;
+            letter-spacing: 1.5px;
+            color: var(--text-color-h3);
+            margin: 15px 70px 25px 0;
+        }
+    
+        .description {
+            font-family: var(--font-regular);
+            font-size: 22px;
+            line-height: 31px;
+            color: var(--text-color-p);
+            margin: 0 84px 25px 0;
+        }
+    
+        .body-button {
+            font-family: var(--font-bold);
+        }
+    }
+
+    .body-medium-two {
+        margin: 100px 0;
+
+        .img-body {
+            width: 100%;
+        }
+
+        .img-description {
+            font-family: var(--font-regular);
+            font-size: 16px;
+            line-height: 21px;
+            color: var(--text-color-description);
+            margin-top: 10px;
+        }
+    }
+}
+
+
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 1200px) {
@@ -132,6 +220,7 @@ body {
         }
     }
 
+    /* Header */
     .header {
         &__body {
             .title {
@@ -150,10 +239,90 @@ body {
             }
         }
     }
+
+    /* Body */
+    .body {
+        .body-top {
+            margin-bottom: 50px;
+        }
+
+        .body-medium-one {
+            margin: 100px 0 50px 0;
+
+            .p-title {
+                font-size: 25px;
+                line-height: 31px;
+            }
+    
+            .h3-title {
+                font-size: 47px;
+                line-height: 55px;
+                letter-spacing: 1px;
+                margin: 15px 0 25px 0;
+            }
+    
+            .description {
+                font-size: 20px;
+                line-height: 29px;
+            }
+    
+            .body-button {
+                font-size: 15px;
+                line-height: 17px;
+            }
+        }
+
+        .body-medium-two {
+            margin: 100px 0 50px 0;
+
+            .img-body {
+                width: 100%;
+            }
+    
+            .img-description {
+                font-size: 14px;
+                line-height: 19px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    /* Body */
+    .body {
+        .body-top {
+            margin-bottom: 20px;
+
+            .video-cover {
+                width: 100%;
+            }
+        }
+
+        .body-medium-one {
+            margin: 100px 0 0 0;
+
+            .description {
+                margin: 0 0 25px 0;
+            }
+
+            .body-button {
+                margin-bottom: 10px;
+            }
+        }
+
+        .body-medium-two {
+            margin: 0 0 20px 0;
+        }
+
+        .margin-top-none {
+            margin: 10px 0 140px 0;
+        }
+    }
 }
 
 /* For medium devices */
 @media screen and (max-width: 767px) {
+    /* Header */
     .header {
         &__body {
             .title {
@@ -176,9 +345,82 @@ body {
             }
         }
     }
+
+    /* Body */
+    .body {
+        .body-top {
+            .body-title {
+                font-size: 30px;
+                line-height: 50px;
+                letter-spacing: 1px;
+                margin-top: 70px;
+            }
+    
+            .play-button {
+                padding: 20px;
+    
+                .play-button__text {
+                    display: none;
+                }
+            }
+        }
+
+        .body-medium-one {
+            margin: 60px 0 0 0;
+
+            .p-title {
+                font-size: 20px;
+                line-height: 26px;
+            }
+    
+            .h3-title {
+                font-size: 37px;
+                line-height: 45px;
+            }
+    
+            .description {
+                font-size: 17px;
+                line-height: 26px;
+            }
+        }
+
+        .margin-top-none {
+            margin: 10px 0 110px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    /* Body */
+    .body{
+        .body-top {
+            margin-bottom: 10px;
+
+            .video-cover {
+                width: 85%;
+            }
+        }
+
+        .body-medium-one {
+            margin: 50px 0 0 0;
+        }
+
+        .body-medium-two {
+            margin: 0 0 10px 0;
+
+            .img-body {
+                width: 85%;
+            }
+        }
+
+        .margin-top-none {
+            margin: 10px 0 90px 0;
+        }
+    }
 }
 
 @media screen and (max-width: 540px) {
+    /* Header */
     .header {
         &__body {
             .title {
@@ -220,10 +462,55 @@ body {
             }
         }
     }
+
+    /* Body */
+    .body {
+        .body-top {
+            .body-title {
+                font-size: 25px;
+                line-height: 45px;
+                margin-top: 50px;
+            }
+    
+            .play-button {
+                padding: 15px;
+            }
+        }
+
+        .body-medium-one {
+            .p-title {
+                font-size: 15px;
+                line-height: 21px;
+            }
+    
+            .h3-title {
+                font-size: 28px;
+                line-height: 36px;
+            }
+    
+            .description {
+                font-size: 15px;
+                line-height: 24px;
+            }
+    
+            .body-button {
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+
+        .body-medium-two {
+            .img-description {
+                font-size: 12px;
+                line-height: 17px;
+            }
+        }
+    }
 }
 
 /* For small devices */
 @media screen and (max-width: 400px) {
+    /* Header */
     .header {
         &__body {
             .title {
@@ -260,6 +547,56 @@ body {
                 font-size: 10px;
                 line-height: 17px;
             }
+        }
+    }
+
+    /* Body */
+    .body {
+        .body-top {
+            margin-bottom: 5px;
+
+            .body-title {
+                font-size: 20px;
+                line-height: 40px;
+                margin-top: 45px;
+            }
+    
+            .play-button {
+                padding: 10px;
+            }
+        }
+
+        .body-medium-one {
+            margin: 30px 0 0 0;
+
+            .h3-title {
+                margin-top: 18px;
+                margin-bottom: 10px;
+            }
+    
+            .description {
+                font-size: 13px;
+                line-height: 22px;
+                margin-bottom: 5px;
+            }
+    
+            .body-button {
+                font-size: 13px;
+                line-height: 15px;
+            }
+        }
+
+        .body-medium-two {
+            margin: 0 0 5px 0;
+
+            .img-description {
+                font-size: 10px;
+                line-height: 15px;
+            }
+        }
+
+        .margin-top-none {
+            margin: 10px 0 70px 0;
         }
     }
 }
