@@ -24,6 +24,7 @@
   --text-color-h4: #FFFFFF;
   --text-color-p: rgba(14, 16, 22, 0.95);
   --text-color-subtitle: #35393F;
+  --text-color-subtitle-two: #F4F3F3;
   --text-color-description: rgba(14, 16, 22, 0.4);
   --text-color-gray: #B2B2B2;
   --text-color-green: #0C9F64;
@@ -41,6 +42,8 @@
   --button-color-two: rgb(221, 221, 221);
   --button-color-three: #FFFFFF;
   --slider-box-color-background: #202E78;
-  --slider-color-background: #000639; }
+  --slider-color-background: #000639;
+  --templates-box-color-background: #181818;
+  --new-color-background: #F64775; }
 
 /*# sourceMappingURL=vars.css.map */

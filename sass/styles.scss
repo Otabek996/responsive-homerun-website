@@ -283,6 +283,57 @@ body {
             }
         }
     }
+
+    .body-templates {
+        background: var(--templates-box-color-background);
+        border-radius: 20px;
+        margin: 40px 0 140px 0;
+
+        .templates-info {
+            padding: 70px 0 40px 0;
+
+            .new-box {
+                width: 63px;
+                background: var(--new-color-background);
+                border-radius: 20px;
+                padding: 2px 15px;
+                margin: 0 auto 16px auto;
+
+                .new {
+                    font-family: var(--font-regular);
+                    font-size: 17px;
+                    line-height: 27px;
+                    color: var(--text-color-white);
+                    margin-bottom: 0;
+                }
+            }
+
+            .templates__title {
+                font-family: var(--font-bold);
+                font-size: 58px;
+                line-height: 64px;
+                letter-spacing: 1.5px;
+                color: var(--text-color-white);
+                margin-bottom: 0;
+            }
+
+            .templates__subtitle {
+                font-family: var(--font-regular);
+                font-size: 22px;
+                line-height: 31px;
+                color: var(--text-color-subtitle-two);
+                margin: 25px 0 70px 0;
+            }
+        }
+
+        .templates-box {
+            margin: 0 -12px 20px -12px;
+
+            .templates-img {
+                width: 100%;
+            }
+        }
+    }
 }
 
 
@@ -494,6 +545,36 @@ body {
                 }
             }
         }
+
+        .body-templates {
+            margin: 40px 0 80px 0;
+
+            .templates-info {
+                padding: 30px 0;
+
+                .new-box {
+                    width: 59px;
+                    padding: 2px 13px;
+                    margin: 0 auto 10px auto;
+
+                    .new {
+                        font-size: 13px;
+                        line-height: 23px;
+                    }
+                }
+
+                .templates__title {
+                    font-size: 45px;
+                    line-height: 51px;
+                }
+
+                .templates__subtitle {
+                    font-size: 17px;
+                    line-height: 26px;
+                    margin: 20px 0 30px 0;
+                }
+            }
+        }
     }
 }
 
@@ -611,6 +692,21 @@ body {
                 }
             }
         }
+
+        .body-templates {
+            .templates-info {
+                .templates__title {
+                    font-size: 34px;
+                    line-height: 40px;
+                }
+
+                .templates__subtitle {
+                    font-size: 14px;
+                    line-height: 23px;
+                    margin: 15px 0 20px 0;
+                }
+            }
+        }
     }
 }
 
@@ -676,6 +772,10 @@ body {
                     }
                 }
             }
+        }
+
+        .body-templates {
+            margin: 30px auto 60px auto;
         }
     }
 }
@@ -764,6 +864,35 @@ body {
             .img-description {
                 font-size: 12px;
                 line-height: 17px;
+            }
+        }
+
+        .body-templates {
+            margin: 20px auto 50px auto;
+
+            .templates-info {
+                padding: 25px 0;
+
+                .new-box {
+                    width: 45px;
+                    padding: 1px 8px;
+                }
+
+                .templates__title {
+                    font-size: 25px;
+                    line-height: 30px;
+                    letter-spacing: 1px;
+                }
+
+                .templates__subtitle {
+                    font-size: 12px;
+                    line-height: 21px;
+                }
+
+                .templates-button {
+                    font-size: 14px;
+                    line-height: 18px;
+                }
             }
         }
     }
@@ -890,6 +1019,38 @@ body {
                             }
                         }
                     }
+                }
+            }
+        }
+
+        .body-templates {
+            margin: 10px auto 40px auto;
+
+            .templates-info {
+                padding: 15px 0;
+
+                .new-box {
+                    width: 40px;
+
+                    .new {
+                        font-size: 10px;
+                        line-height: 20px;
+                    }
+                }
+
+                .templates__title {
+                    font-size: 19px;
+                    line-height: 24px;
+                }
+
+                .templates__subtitle {
+                    font-size: 10px;
+                    line-height: 19px;
+                }
+
+                .templates-button {
+                    font-size: 12px;
+                    line-height: 14px;
                 }
             }
         }
