@@ -53,8 +53,10 @@
   --button-color-one: #0099FF;
   --button-color-two: rgb(221, 221, 221);
   --button-color-three: #FFFFFF;
+  --button-color-four: #0E1016;
   --slider-box-color-background: #202E78;
   --slider-color-background: #000639;
+  --start-box-color-background: #3CA9FF;
   --templates-box-color-background: #181818;
   --new-color-background: #F64775; }
 
@@ -283,6 +285,47 @@ body .button-blue {
     margin: 0 -12px 20px -12px; }
     .body .body-templates .templates-box .templates-img {
       width: 100%; }
+.body .body-rating {
+  margin-top: 10px; }
+  .body .body-rating .rating-h3 {
+    font-family: var(--font-bold);
+    font-size: 82px;
+    line-height: 115px;
+    color: var(--text-color-h3);
+    margin: 20px 0 15px 0; }
+  .body .body-rating .rating-p {
+    font-family: var(--font-regular);
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--text-color-p);
+    margin-top: 25px; }
+.body .body-start {
+  background: var(--start-box-color-background);
+  border-radius: 20px;
+  padding: 60px 0 70px 0;
+  margin: 120px 0 60px 0; }
+  .body .body-start .start-title {
+    font-family: var(--font-bold);
+    font-size: 57px;
+    line-height: 64px;
+    letter-spacing: 1.5px;
+    color: var(--text-color-white);
+    margin: 15px 0 25px 0; }
+  .body .body-start .start-button {
+    font-family: var(--font-regular);
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--text-color-white);
+    border-radius: 8px;
+    background: var(--button-color-four);
+    padding: 14px 20px;
+    margin-bottom: 30px; }
+  .body .body-start .start-text .property {
+    font-family: var(--font-regular);
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-color-white);
+    margin-right: 24px; }
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
@@ -401,7 +444,24 @@ body .button-blue {
       .body .body-templates .templates-info .templates__subtitle {
         font-size: 17px;
         line-height: 26px;
-        margin: 20px 0 30px 0; } }
+        margin: 20px 0 30px 0; }
+  .body .body-rating .rating-h3 {
+    font-size: 72px;
+    line-height: 105px; }
+  .body .body-start {
+    margin: 80px 0 40px 0;
+    padding: 40px 0 50px 0; }
+    .body .body-start .start-title {
+      font-size: 45px;
+      line-height: 52px;
+      letter-spacing: 1px; }
+    .body .body-start .start-button {
+      font-size: 16px;
+      line-height: 18px;
+      padding: 12px 18px; }
+    .body .body-start .start-text .property {
+      font-size: 14px;
+      line-height: 22px; } }
 /* For medium devices */
 @media screen and (max-width: 767px) {
   /* Header */
@@ -469,7 +529,28 @@ body .button-blue {
   .body .body-templates .templates-info .templates__subtitle {
     font-size: 14px;
     line-height: 23px;
-    margin: 15px 0 20px 0; } }
+    margin: 15px 0 20px 0; }
+  .body .body-rating .rating-h3 {
+    font-size: 62px;
+    line-height: 85px; }
+  .body .body-rating .rating-p {
+    font-size: 18px;
+    line-height: 26px; }
+  .body .body-start {
+    padding: 30px 0 30px 0; }
+    .body .body-start .start-title {
+      font-size: 35px;
+      line-height: 42px;
+      margin: 15px 0 20px 0; }
+    .body .body-start .start-button {
+      font-size: 14px;
+      line-height: 16px;
+      padding: 10px 16px;
+      margin-bottom: 20px; }
+    .body .body-start .start-text .property {
+      font-size: 12px;
+      line-height: 20px;
+      margin-right: 15px; } }
 @media screen and (max-width: 575px) {
   /* Body */
   .body .body-top {
@@ -500,7 +581,9 @@ body .button-blue {
       border-color: var(--button-color-border);
       color: var(--button-color-three); }
   .body .body-templates {
-    margin: 30px auto 60px auto; } }
+    margin: 30px auto 60px auto; }
+  .body .body-start {
+    margin: 50px auto 30px auto; } }
 @media screen and (max-width: 540px) {
   /* Header */
   .header__body .title {
@@ -562,7 +645,13 @@ body .button-blue {
         line-height: 21px; }
       .body .body-templates .templates-info .templates-button {
         font-size: 14px;
-        line-height: 18px; } }
+        line-height: 18px; }
+  .body .body-start {
+    margin: 40px auto 30px auto;
+    padding: 20px 0; }
+    .body .body-start .start-title {
+      font-size: 30px;
+      line-height: 35px; } }
 /* For small devices */
 @media screen and (max-width: 400px) {
   /* Header */
@@ -643,6 +732,32 @@ body .button-blue {
         line-height: 19px; }
       .body .body-templates .templates-info .templates-button {
         font-size: 12px;
-        line-height: 14px; } }
+        line-height: 14px; }
+  .body .body-rating .rating-h3 {
+    font-size: 52px;
+    line-height: 65px; }
+  .body .body-rating .rating-p {
+    font-size: 16px;
+    line-height: 24px; }
+  .body .body-start {
+    padding: 15px 0; }
+    .body .body-start .dog-img {
+      width: 50%; }
+    .body .body-start .start-title {
+      font-size: 25px;
+      line-height: 30px;
+      margin: 10px 0 15px 0; }
+    .body .body-start .start-button {
+      font-size: 12px;
+      line-height: 14px;
+      padding: 9px 14px;
+      margin-bottom: 10px; }
+    .body .body-start .start-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .body .body-start .start-text .property {
+        margin-top: 5px;
+        margin-right: 0; } }
 
 /*# sourceMappingURL=styles.css.map */
