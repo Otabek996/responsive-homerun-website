@@ -22,6 +22,7 @@
   --text-color-h2: #000000;
   --text-color-h3: rgba(14, 16, 22, 0.95);
   --text-color-h4: #FFFFFF;
+  --text-color-h6: #FFFFFF;
   --text-color-p: rgba(14, 16, 22, 0.95);
   --text-color-subtitle: #35393F;
   --text-color-subtitle-two: #F4F3F3;
@@ -46,6 +47,8 @@
   --slider-color-background: #000639;
   --start-box-color-background: #3CA9FF;
   --templates-box-color-background: #181818;
-  --new-color-background: #F64775; }
+  --new-color-background: #F64775;
+  --notification-color-background: #FC4945;
+  --footer-color-background: rgba(0, 0, 0, 0.95); }
 
 /*# sourceMappingURL=vars.css.map */
