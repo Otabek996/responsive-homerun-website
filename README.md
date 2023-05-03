@@ -1,6 +1,12 @@
-# Responsive Landing Page Homerun
-#### Homerun Website
+# Responsive Homerun Website
 
-Responsive Landing Page Homerun using Html and Css.
+## 🏗 Building Materials
 
-![homerun](./%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202023-03-20%20164950.png)
+| HTML | CSS | Sass | Bootstrap |
+| :--: | :-: | :--: | :-------: |
+
+## ⚙️ Features
+- Responsive design
+- Smooth scrolling in each section
+
+![homerun](https://github.com/Otabek996/homerun_website/blob/main/imgWebsite.png)
